@@ -156,7 +156,7 @@
                         <div class="product-image">
                             <img class="img-fluid" src="assets/img/meatsnack.webp" alt="">
                         </div>
-                        <a href="service-details.html" class="stretched-link">
+                        <a href="{{ route('catalog', \App\Models\Product::MEAT_SNACK) }}" class="stretched-link">
                             <h3>Мʼясні снекі</h3>
                         </a>
                         <p>
@@ -171,7 +171,7 @@
                         <div class="product-image">
                             <img class="img-fluid" src="assets/img/fishsnack.webp" alt="">
                         </div>
-                        <a href="service-details.html" class="stretched-link">
+                        <a href="{{ route('catalog', \App\Models\Product::FISH_SNACK) }}" class="stretched-link">
                             <h3>Рибні снекі</h3>
                         </a>
                         <p>
@@ -187,13 +187,11 @@
                         <div class="product-image">
                             <img class="img-fluid" src="assets/img/ikranic.webp" alt="">
                         </div>
-                        <a href="service-details.html" class="stretched-link">
-                            <h3>Снекі зі спеціями</h3>
+                        <a href="{{ route('catalog', \App\Models\Product::CAVIAR_STICK) }}" class="stretched-link">
+                            <h3>Ікряники</h3>
                         </a>
                         <p>
-                            Снеки зі спеціями - Для
-                            любителів гострих і пікантних смаків, наші снеки зі спеціями стануть чудовим
-                            вибором.
+                            Ікряники - для хто любить смак ікри
                         </p>
                     </div>
                 </div><!-- End Service Item -->

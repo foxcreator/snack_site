@@ -63,6 +63,9 @@
             <li class="nav-item">
                 <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('home') }}" target="_blank">Перейти на сайт</a>
+            </li>
         </ul>
 
         <ul class="navbar-nav ml-auto">
@@ -76,7 +79,7 @@
 
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
         <!-- Brand Logo -->
-        <a href="{{ route('admin.dashboard') }}" class="brand-link d-flex align-items-center">
+        <a href="{{ route('products.index') }}" class="brand-link d-flex align-items-center">
 
             <b>GoldProduct</b>SitePanel
         </a>
@@ -91,7 +94,7 @@
             <nav class="mt-2">
                 <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                     <li class="nav-item">
-                        <a href="{{ route('admin.dashboard') }}" class="nav-link">
+                        <a href="{{ route('products.index') }}" class="nav-link">
                             <i class="nav-icon fas fa-tachometer-alt"></i>
                             <p>Все продукты</p>
                         </a>
