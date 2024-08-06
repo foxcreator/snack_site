@@ -1,0 +1,43 @@
+version: "3.3"
+
+services:
+    nginx:
+        build:
+            context: .
+            dockerfile: docker/Nginx.Dockerfile
+        ports:
+            - 8000:80
+        links:
+            - fpm
+        volumes:
+            - ./:/var/www/SnackSite
+    fpm:
+        build:
+            context: .
+            dockerfile: docker/fpm.Dockerfile
+        volumes:
+            - ./:/var/www/SnackSite
+        working_dir: /var/www/SnackSite
+    mysql:
+        image: mysql:8.0
+        ports:
+            - 33061:3306
+        environment:
+            - MYSQL_ROOT_PASSWORD=root
+            - MYSQL_DATABASE=flowershop
+    composer:
+        build:
+            context: .
+            dockerfile: docker/composer.Dockerfile
+        volumes:
+            - ./:/var/www/SnackSite
+    node:
+        image: node:16
+        working_dir: /var/www/SnackSite
+        ports:
+            - 5173:5173
+        volumes:
+            - ./:/var/www/SnackSite
+#        user: "502:20"
+#        command: "npm run dev"
+
