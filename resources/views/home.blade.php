@@ -14,28 +14,28 @@
                 </div>
             </div>
 
-            <div class="row gy-4 mt-5 justify-content-center" data-aos="fade-up" data-aos-delay="200">
-                <div class="col-xl-2 col-md-4"  data-aos-delay="300">
-                    <div class="icon-box">
-                        <!--              <i class="bi bi-binoculars"></i>-->
-                        <i class="bi bi-1-square"></i>
-                        <h3><a href="">Мʼясні снекі</a></h3>
-                    </div>
-                </div>
-                <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="400">
-                    <div class="icon-box">
-                        <i class="bi bi-2-square"></i>
-                        <h3><a href="">Рибні снекі</a></h3>
-                    </div>
-                </div>
-                <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="500">
-                    <div class="icon-box">
-                        <i class="bi bi-3-square"></i>
-                        <h3><a href="">Ікряники</a></h3>
-                    </div>
-                </div>
+{{--            <div class="row gy-4 mt-5 justify-content-center" data-aos="fade-up" data-aos-delay="200">--}}
+{{--                <div class="col-xl-2 col-md-4"  data-aos-delay="300">--}}
+{{--                    <div class="icon-box">--}}
+{{--                        <!--              <i class="bi bi-binoculars"></i>-->--}}
+{{--                        <i class="bi bi-1-square"></i>--}}
+{{--                        <h3><a href="">Мʼясні снеки</a></h3>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="400">--}}
+{{--                    <div class="icon-box">--}}
+{{--                        <i class="bi bi-2-square"></i>--}}
+{{--                        <h3><a href="">Рибні снеки</a></h3>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="500">--}}
+{{--                    <div class="icon-box">--}}
+{{--                        <i class="bi bi-3-square"></i>--}}
+{{--                        <h3><a href="">Ікряники</a></h3>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
 
-            </div>
+{{--            </div>--}}
 
         </div>
 
@@ -157,7 +157,7 @@
                             <img class="img-fluid" src="assets/img/meatsnack.webp" alt="">
                         </div>
                         <a href="{{ route('catalog', \App\Models\Product::MEAT_SNACK) }}" class="stretched-link">
-                            <h3>Мʼясні снекі</h3>
+                            <h3>Мʼясні снеки</h3>
                         </a>
                         <p>
                             Класичні м'ясні снеки - Ідеальні для перекусу, мають
@@ -172,7 +172,7 @@
                             <img class="img-fluid" src="assets/img/fishsnack.webp" alt="">
                         </div>
                         <a href="{{ route('catalog', \App\Models\Product::FISH_SNACK) }}" class="stretched-link">
-                            <h3>Рибні снекі</h3>
+                            <h3>Рибні снеки</h3>
                         </a>
                         <p>
                             Снеки з риби - Легкі та

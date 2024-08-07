@@ -16,8 +16,8 @@ class Product extends Model
     const CAVIAR_STICK = 3;
 
     const CATEGORIES = [
-        self::MEAT_SNACK => 'Мʼясні снекі',
-        self::FISH_SNACK => 'Рибні снекі',
+        self::MEAT_SNACK => 'Мʼясні снеки',
+        self::FISH_SNACK => 'Рибні снеки',
         self::CAVIAR_STICK => 'Ікряники',
     ];
 
