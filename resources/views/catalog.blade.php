@@ -23,30 +23,19 @@
 
         <div class="container" data-aos="fade-up">
             <div class="row gy-4">
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="services-item position-relative">
-                        <div class="card bg-gray-dark">
-                            <img src="{{ asset('assets/img/fishsnack.webp') }}" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                @foreach($products as $product)
+                    <div class="col-lg-4 col-md-6">
+                        <div class="services-item position-relative">
+                            <div class="card bg-gray-dark">
+                                <img src="{{ $product->thumbnailUrl }}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ $product->name }}</h5>
+                                    <p class="card-text">{{ $product->description }}</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="services-item position-relative">
-                        <div class="card bg-gray-dark">
-                            <img src="{{ asset('assets/img/fishsnack.webp') }}" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+                @endforeach
             </div>
         </div>
 

@@ -39,7 +39,7 @@
 </head>
 <body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
 <div class="wrapper">
-    @if (session('status'))
+    @if (session('success'))
         <script>
             $(document).ready(function () {
                 toastr.success("{{ session('status') }}");

@@ -17,11 +17,12 @@ class HomeController extends Controller
         $categoryName = '';
         foreach (Product::CATEGORIES as $key => $category) {
             if ($key == $categoryId) {
+                $products = Product::where('category_id', $key)->get();
                 $categoryName = $category;
                 break;
             }
         }
 
-        return view('catalog', compact('categoryName'));
+        return view('catalog', compact('categoryName', 'products'));
     }
 }

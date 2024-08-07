@@ -12,7 +12,7 @@
     @foreach($products as $product)
         <tr>
             <td class="table-image" style="max-height: 20px">
-                <img class="img-thumbnail m-height" src="{{ $product->thumbnailUrl }}" alt="">
+                <img style="max-height: 80px" class="img-thumbnail m-height" src="{{ $product->thumbnailUrl }}" alt="">
             </td>
             <td class="custom-text-overflow">{{ $product->name }}</td>
             <td class="custom-text-overflow">{{ $product->description }}</td>

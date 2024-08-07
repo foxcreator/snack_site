@@ -34,7 +34,7 @@ class AdminController extends Controller
         $data['thumbnail'] = $thumbnail;
         $product = Product::create($data);
         if ($product) {
-            return redirect()->back()->with([['success' => 'Товар добавлен']]);
+            return redirect()->route('products.index')->with([['success' => 'Товар добавлен']]);
         }
 
         return redirect()->back()->with([['error' => 'Smth went wrong']]);
