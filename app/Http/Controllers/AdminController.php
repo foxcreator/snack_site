@@ -59,8 +59,9 @@ class AdminController extends Controller
         }
     }
 
-    public function destroy()
+    public function destroy(Product $product)
     {
-
+        $product->delete();
+        return redirect()->route('products.index')->with(['status' => 'Товар удален']);
     }
 }

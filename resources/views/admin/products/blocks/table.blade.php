@@ -18,9 +18,15 @@
             <td class="custom-text-overflow">{{ $product->description }}</td>
             <td>{{ $product->price }}</td>
 
-            <td class="text-right">
+            <td class="text-right d-flex justify-content-end">
 {{--                <a href="{{ route('products.show', $product) }}" class="btn btn-secondary btn-xs">Информация</a>--}}
-                <a href="{{ route('products.edit', $product) }}" class="btn btn-info btn-xs">Редактировать</a>
+                <a href="{{ route('products.edit', $product) }}" class="btn btn-info btn-xs mr-3">Редактировать</a>
+                <form action="{{ route('products.destroy', $product) }}" method="POST">
+                    @method('DELETE')
+                    @csrf
+                    <button class="btn btn-danger btn-xs">Удалить</button>
+
+                </form>
             </td>
         </tr>
     @endforeach
