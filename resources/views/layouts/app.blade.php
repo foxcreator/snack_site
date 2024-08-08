@@ -40,10 +40,10 @@
 
         <nav id="navmenu" class="navmenu">
             <ul>
-                <li><a href="#hero" class="active">Головна<br></a></li>
-                <li><a href="#about">Про нас</a></li>
-                <li><a href="#services">Продукція</a></li>
-                <li><a href="#contact">Контакти</a></li>
+                <li><a href="{{ route('home') }}#hero" class="active">Головна<br></a></li>
+                <li><a href="{{ route('home') }}#services">Продукція</a></li>
+                <li><a href="{{ route('home') }}#about">Про нас</a></li>
+                <li><a href="{{ route('home') }}#contact">Контакти</a></li>
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
